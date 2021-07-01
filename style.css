@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-size: 2vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dice-container {
+    display: flex;
+}
+
+.dice {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    background-color: #fff; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+/* animation */
+.animatedItem {
+    font-weight: bold;
+    color: palevioletred;
+    font-size: 3vw;
+    display: none;
+}
+
+.addRemoveAnimation {
+    display: inline-block;
+    margin: 0 0.5rem;  
+    animation: backOutUp;
+    animation-duration: 6s;  
+}
+
+/* general */
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 6vw;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    
+    .dice-container {
+        flex-wrap: wrap;
+    }
+    
+    .dice {       
+        margin-top: 30px;
+    }
+}
